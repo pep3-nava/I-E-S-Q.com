@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Empresa dedicada a las instalaciones electricas de alta, media y baja tención">
+  <meta property="og:image" content="img/electri.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.I-E-S-Q.com/inicio">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords"
+  content="electricidad,luz,cable,mantenimiento,camaras,anuncios luminosos,instalaciones,contactos,apagadores,">
+
+  <title>Inicio</title>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="shortcut icon" href="img/rayo2.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="yourpath/magic.css">
+  <link rel="stylesheet" href="yourpath/magic.min.css">
+  <link rel="text/style" href="https://www.dafont.com/">
+</head>
+
+<body>
+<header>
+  <div class="hamburger">
+    <div class="_layer -top"></div>
+    <div class="_layer -mid"></div>
+    <div class="_layer -bottom"></div>
+  </div>
+  
+  <nav class="menuppal">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="galeria.html">Nosotros</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<center class="encabzado">
+  <h1 class="tt"><b class="titulo">I</b>nstalaciónes&nbsp;<b
+      class="titulo">E</b>lecticas&nbsp;<sup>&</sup>&nbsp;<b class="titulo">S</b>erviciós&nbsp;<b
+      class="titulo">Q</b>uintero</h1>
+  <hr color="red" size="10px" wilih="100%">
+</center>
+
+  <div class="kd">
+    <center>
+      <img class="logo" src="img/I. E . S . Q.gif" alt="iesq" />
+    </center>
+
+    <script>
+      const alphabet = Array.from("  Instalaciones Electricas & Servicios Quintero  ");
+
+      document.body.append(
+        alphabet.reduce((wrapper, name) => {
+          const kbd = document.createElement("kbd");
+          kbd.dataset.key = name;
+          kbd.textContent = name;
+          wrapper.append(kbd);
+          return wrapper;
+        }, document.createDocumentFragment())
+      );
+
+      window.addEventListener("keydown", (evt) => {
+        if (evt.isTrusted) {
+          clearInterval(timer);
+        }
+        const target = document.querySelector(`[data-key=${evt.key}]`);
+        target.style.viewTransitionName = `kbd-${evt.key}`;
+        const trans = document.startViewTransition(() => { });
+
+        trans.finished.finally(() => {
+          target.style.viewTransitionName = "";
+        });
+      });
+
+      var timer = setInterval(() => {
+        window.dispatchEvent(
+          new KeyboardEvent("keydown", {
+            key: alphabet[Math.floor(Math.random() * 52)]
+          })
+        );
+      }, 900);
+    </script>
+  </div>
+  
+  <div id="servicios">
+    <center>
+
+      <div id="n1">
+        <span class="no1"><b class="bb">I</b>nstalaciones <b class="bb">I</b>ndustriales, <b class="bb">C</b>omerciales
+          <sup>&</sup> <b class="bb">R</b>esidenciales</span>
+      </div>
+
+      <div id="n2">
+        <h2 class="no2"><b class="bb">E</b>lectrificación <br> <sub>de</sub> <br> <b class="bb">V</b>itrinas
+          <sub>,</sub> <b class="bb">E</b>xhibidores
+          <sub>,</sub> <b class="bb">M</b>uebles <br> <i>etc, etc, etc</i>
+        </h2>
+      </div>
+
+      <div id="n3">
+        <h2 class="no3"><b class="bb">I</b>nstalaciones <sub>de</sub> <b class="bb">B</b>aja <b class="bb">T</b>ención
+        </h2>
+      </div>
+
+      <div id="n4">
+        <h2 class="n4"><b class="bb">A</b>nuncios &nbsp; <b class="bb">L</b>uminosos</h2>
+      </div>
+
+      <div id="n5">
+        <h2 class="n5"><b class="bb">S</b>istema <b class="bb">C</b>ontra <b class="bb">I</b>ncendios</h2>
+      </div>
+
+      <div id="n6">
+        <h2 class="n6"><b class="bb">C</b>ercas <b class="bb">E</b>léctricas</h2>
+      </div>
+
+      <div id="n7">
+        <h2 class="n7"><b class="bb">S</b>istema <sub>de</sub> <b class="bb">C</b>ámaras <sup>&</sup> <b
+            class="bb">A</b>larmas</h2>
+      </div>
+
+      <div id="n8">
+        <h2 class="n8"><b class="bb">V</b>oz <sup>&</sup> <b class="bb">D</b>atos</h2>
+      </div>
+
+      <div id="n9">
+        <h2 class="n9"><b class="bb">M</b>antenimiento <b class="bb">P</b>reventivo <sup>&</sup> <b
+            class="bb">C</b>orrectivo</h2>
+      </div>
+
+      <div id="n0">
+        <h2 class="n0"><b class="bb">C</b>ontrol <sub>de</sub> <b class="bb">A</b>ccesos</h2>
+      </div>
+    </center>
+  </div>
+</body>
+<script src="/js/script.js"></script>
+<script type="text/JavaScript" src="https://acortar.org/gen-js"></script>
+
+</html>

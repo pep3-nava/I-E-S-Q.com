@@ -1,0 +1,436 @@
+@font-face {
+	font-family: sweet;
+	src: url(../fonts/SweetLeaf.ttf);
+}
+
+@import url(/fonts/);
+
+html {
+	width: 100%;
+}
+
+.titulo {
+	font-size: 60px;
+	font-weight: 1000;
+	color: red;
+}
+
+
+.tt {
+	color: black;
+	font-family: sweet;
+	font-size: 55px;
+}
+
+.hamburger {
+	position: fixed;
+	background-color: transparent;
+	color: black;
+	left: 0;
+	top: 0;
+	height: 30px;
+	width: 30px;
+	padding: 20px 20px;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transition: -webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	z-index: 1002;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+
+.hamburger.is-active {
+	background-color: transparent;
+}
+
+._layer {
+	background: red;
+	margin-bottom: 6px;
+	border-radius: 10px;
+	width: 38px;
+	height: 6px;
+	opacity: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+}
+
+.hamburger:hover .-top {
+	-webkit-transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+
+.hamburger:hover .-bottom {
+	-webkit-transform: translateY(50%);
+	-ms-transform: translateY(100%);
+	transform: translateY(100%);
+}
+
+.hamburger.is-active .-top {
+	-webkit-transform: translateY(200%) rotate(45deg) !important;
+	-ms-transform: translateY(200%) rotate(45deg) !important;
+	transform: translateY(200%) rotate(45deg) !important;
+}
+
+.hamburger.is-active .-mid {
+	opacity: 0;
+}
+
+.hamburger.is-active .-bottom {
+	-webkit-transform: translateY(-200%) rotate(135deg) !important;
+	-ms-transform: translateY(-200%) rotate(135deg) !important;
+	transform: translateY(-200%) rotate(135deg) !important;
+}
+
+.menuppal.is_active {
+	transform: translate3d(0px, 0px, 0px);
+}
+
+.menuppal {
+	background-color: rgba(255, 255, 255, 0.95);
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	overflow-y: scroll;
+	position: fixed;
+	top: 0;
+	transform: translate3d(0px, -100%, 0px);
+	transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+	width: 100%;
+	z-index: 1001;
+}
+
+.menuppal ul {
+	margin: 0;
+	padding: 0;
+}
+
+.menuppal ul li {
+	list-style: none;
+	text-align: center;
+	font-family: Verdadna, Arial, Helvetica;
+	color: nav-color-text;
+	font-size: 1.5rem;
+	line-height: 3em;
+	height: 3em;
+	color: black;
+	text-transform: none;
+	font-weight: bold;
+}
+
+.menuppal ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+.menuppal ul li a:hover {
+	text-decoration: none;
+	color: black;
+}
+
+.encabzado {
+	background-color: cadetblue;
+	padding-top: 10px;
+	margin-bottom: -8px;
+	margin-top: -25px;
+}
+
+.logo {
+	width: 700px;
+	height: 400px;
+	margin-top: 25px;
+	animation: spiner 1s linear;
+	animation-delay: spiner 5s linear;
+}
+
+@keyframes spiner {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	50% {
+		transform: rotate(180deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+.kd {
+	background-color: black;
+}
+
+kbd {
+	background-color: black;
+	border-radius: 3px;
+	border: 1px solid blue;
+	box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2),
+		0 2px 0 0 rgba(0, 0, 0, 0.7) inset;
+	color: gold;
+	font-size: 34px;
+	padding: 0.1em;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+	animation: none;
+}
+
+::view-transition-old(*) {
+	animation: 300ms cubic-bezier(0.4, 0, 0.2, 1) both drop-from-top;
+}
+
+::view-transition-new(*) {
+	animation: 300ms 200ms cubic-bezier(0.4, 0, 0.2, 1) both drop-to-bottom;
+}
+
+@keyframes drop-from-top {
+	from {
+		transform: translateY(-50vh);
+	}
+}
+
+@keyframes drop-to-bottom {
+	to {
+		transform: translateY(50vh);
+	}
+}
+
+#servicios {
+	width: 100%;
+	background: black;
+	padding-top: 1em;
+}
+
+:root {
+	--black: oklch(17.7% 0.105 262.48);
+	--purple: oklch(60% 0.37 294.7);
+	--orange: oklch(60% 0.37 64.65);
+	--yellow: oklch(60% 0.37 109.08);
+	--blue: oklch(60% 0.37 237.06);
+	--black-alpha-50: color-mix(in oklch, var(--black), transparent);
+}
+
+@property --gradient-angle {
+	inherits: false;
+	initial-value: 0deg;
+	syntax: "<angle>";
+}
+
+@keyframes spin {
+	to {
+		--gradient-angle: 360deg;
+	}
+}
+
+#n1 {
+	margin-left: 55px;
+	height: 3em;
+	width: 450px;
+	font-size: 30px;
+	color: red;
+	font-weight: 1000;
+	float: left;
+	animation: spin 2s linear infinite;
+	background: linear-gradient(to bottom, var(--black), var(--black)) padding-box,
+		conic-gradient(in oklch from var(--gradient-angle),
+			var(--purple),
+			var(--orange),
+			var(--yellow),
+			var(--blue),
+			var(--purple)) border-box;
+	border: 5px solid transparent;
+	border-radius: 30px;
+}
+
+.bb {
+	color: white;
+	font-weight: 1000;
+	font-size: 35px;
+}
+
+#n2 {
+	float: right;
+	width: 180px;
+	margin-right: 25px;
+	font-weight: 1000;
+	color: red;
+	animation: spin 2s linear infinite;
+	background: linear-gradient(to bottom, var(--black), var(--black)) padding-box,
+		conic-gradient(in oklch from var(--gradient-angle),
+			var(--purple),
+			var(--orange),
+			var(--yellow),
+			var(--blue),
+			var(--purple)) border-box;
+	border: 5px solid transparent;
+	border-radius: 30px;
+}
+
+#n3 {
+	width: 180px;
+	color: red;
+	font-weight: 1000;
+	animation: spin 2s linear infinite;
+	background: linear-gradient(to bottom, var(--black), var(--black)) padding-box,
+		conic-gradient(in oklch from var(--gradient-angle),
+			var(--purple),
+			var(--orange),
+			var(--yellow),
+			var(--blue),
+			var(--purple)) border-box;
+	border: 5px solid transparent;
+	border-radius: 30px;
+}
+
+#n4 {
+	width: 350px;
+	margin-top: 2em;
+	color: red;
+	font-weight: 1000;
+	animation: spin 2s linear infinite;
+	background: linear-gradient(to bottom, var(--black), var(--black)) padding-box,
+		conic-gradient(in oklch from var(--gradient-angle),
+			var(--purple),
+			var(--orange),
+			var(--yellow),
+			var(--blue),
+			var(--purple)) border-box;
+	border: 5px solid transparent;
+	border-radius: 30px;
+}
+
+.servicios,
+h2 {
+	font-weight: 1000;
+	font-size: 25px;
+	color: red;
+	font-weight: 1000;
+}
+
+#n5 {
+	width: 200px;
+	float: left;
+	margin-left: 25px;
+	color: red;
+	font-weight: 1000;
+	animation: spin 2s linear infinite;
+	background: linear-gradient(to bottom, var(--black), var(--black)) padding-box,
+		conic-gradient(in oklch from var(--gradient-angle),
+			var(--purple),
+			var(--orange),
+			var(--yellow),
+			var(--blue),
+			var(--purple)) border-box;
+	border: 5px solid transparent;
+	border-radius: 30px;
+}
+
+* {
+	cursor: url(https://cur.cursors-4u.net/cursors/cur-1/cur1.ani), url(https://cur.cursors-4u.net/cursors/cur-1/cur1.png), auto !important;
+} 
+
+
+#n6 {
+	width: 150px;
+	margin-top: -12em;
+	margin-right: 3em;
+	float: right;
+	color: red;
+	font-weight: 1000;
+	animation: spin 2s linear infinite;
+	background: linear-gradient(to bottom, var(--black), var(--black)) padding-box,
+		conic-gradient(in oklch from var(--gradient-angle),
+			var(--purple),
+			var(--orange),
+			var(--yellow),
+			var(--blue),
+			var(--purple)) border-box;
+	border: 5px solid transparent;
+	border-radius: 30px;
+}
+
+#n7 {
+	width: 250px;
+	margin-top: 2em;
+	margin-left: 9em;
+	color: red;
+	font-weight: 1000;
+	animation: spin 2s linear infinite;
+	background: linear-gradient(to bottom, var(--black), var(--black)) padding-box,
+		conic-gradient(in oklch from var(--gradient-angle),
+			var(--purple),
+			var(--orange),
+			var(--yellow),
+			var(--blue),
+			var(--purple)) border-box;
+	border: 5px solid transparent;
+	border-radius: 30px;
+}
+
+#n8 {
+	margin-top: 3em;
+	width: 187px;
+	float: left;
+	margin-left: 16em;
+	margin-top: -19em;
+	color: red;
+	font-weight: 1000;
+	animation: spin 2s linear infinite;
+	background: linear-gradient(to bottom, var(--black), var(--black)) padding-box,
+		conic-gradient(in oklch from var(--gradient-angle),
+			var(--purple),
+			var(--orange),
+			var(--yellow),
+			var(--blue),
+			var(--purple)) border-box;
+	border: 5px solid transparent;
+	border-radius: 30px;
+
+}
+
+#n9 {
+	width: 320px;
+	float: right;
+	margin-right: 7em;
+	margin-top: -8em;
+	color: red;
+	font-weight: 1000;
+	animation: spin 2s linear infinite;
+	background: linear-gradient(to bottom, var(--black), var(--black)) padding-box,
+		conic-gradient(in oklch from var(--gradient-angle),
+			var(--purple),
+			var(--orange),
+			var(--yellow),
+			var(--blue),
+			var(--purple)) border-box;
+	border: 5px solid transparent;
+	border-radius: 30px;
+}
+
+#n0 {
+	width: 180px;
+	float: left;
+	margin-top: -8em;
+	margin-left: 20em;
+	color: red;
+	font-weight: 1000;
+	animation: spin 2s linear infinite;
+	background: linear-gradient(to bottom, var(--black), var(--black)) padding-box,
+		conic-gradient(in oklch from var(--gradient-angle),
+			var(--purple),
+			var(--orange),
+			var(--yellow),
+			var(--blue),
+			var(--purple)) border-box;
+	border: 5px solid transparent;
+	border-radius: 30px;
+}
