@@ -495,7 +495,7 @@ kbd {
 /*CONTACTO_2*/
 
 .cua {
-	margin-top: 10em;
+	margin-top: 20rem;
 }
 
 .tro {
@@ -505,6 +505,7 @@ kbd {
 	font-weight: 600;
 	position: relative;
 	text-shadow: 0px 0px 15px lime;
+	margin-top: 6em;
 }
 
 .tro:hover {
