@@ -25,43 +25,6 @@
       </center>
       <center>
         <img class="logo" src="/img/I. E . S . Q.gif" alt="iesq" />
-      </center>
-      <center>
-        <script>
-          const alphabet = Array.from("  Instalaciones Electricas & Servicios Quintero  ");
-
-          document.body.append(
-            alphabet.reduce((wrapper, name) => {
-              const kbd = document.createElement("kbd");
-              kbd.dataset.key = name;
-              kbd.textContent = name;
-              wrapper.append(kbd);
-              return wrapper;
-            }, document.createDocumentFragment())
-          );
-
-          window.addEventListener("keydown", (evt) => {
-            if (evt.isTrusted) {
-              clearInterval(timer);
-            }
-            const target = document.querySelector(`[data-key=${evt.key}]`);
-            target.style.viewTransitionName = `kbd-${evt.key}`;
-            const trans = document.startViewTransition(() => { });
-
-            trans.finished.finally(() => {
-              target.style.viewTransitionName = "";
-            });
-          });
-
-          var timer = setInterval(() => {
-            window.dispatchEvent(
-              new KeyboardEvent("keydown", {
-                key: alphabet[Math.floor(Math.random() * 52)]
-              })
-            );
-          }, 900);
-        </script>
-      </center>
     </div>
     <section id="galeria">
       <center>

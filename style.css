@@ -78,46 +78,6 @@
 		}
 	}
 
-	kbd {
-		width: 100%;
-		align-items: center;
-		align-content: center;
-		background-color: black;
-		border-radius: 3px;
-		border: 1px solid blue;
-		box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2), 0 2px 0 0 rgba(0, 0, 0, 0.7) inset;
-		color: gold;
-		font-size: 20px;
-		padding: 0.1em;
-		font-weight: 200;
-	}
-
-	kbd::view-transition-old(root),
-	kbd::view-transition-new(root) {
-		animation: none;
-	}
-
-	kbd::view-transition-old(*) {
-		animation: 300ms cubic-bezier(0.4, 0, 0.2, 1) both drop-from-top;
-	}
-
-	kbd::view-transition-new(*) {
-		animation: 300ms 200ms cubic-bezier(0.4, 0, 0.2, 1) both drop-to-bottom;
-	}
-
-	@keyframes drop-from-top {
-		from {
-			transform: translateY(-50vh);
-		}
-	}
-
-	@keyframes drop-to-bottom {
-		to {
-			transform: translateY(50vh);
-		}
-	}
-
-
 	/*GALERIA*/
 
 	#galeria {
@@ -236,7 +196,7 @@
 
 	#knt4k {
 		background-color: black;
-		height: 495vh;
+		height: 485vh;
 		width: 100%;
 		position: relative;
 	}
@@ -707,47 +667,6 @@
 		}
 	}
 
-	kbd {
-		width: 100%;
-		align-items: center;
-		align-content: center;
-		background-color: black;
-		border-radius: 3px;
-		border: 1px solid blue;
-		box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2),
-			0 2px 0 0 rgba(0, 0, 0, 0.7) inset;
-		color: gold;
-		font-size: 22px;
-		padding: 0.1em;
-	}
-
-	kbd::view-transition-old(root),
-	kbd::view-transition-new(root) {
-		animation: none;
-	}
-
-	kbd::view-transition-old(*) {
-		animation: 300ms cubic-bezier(0.4, 0, 0.2, 1) both drop-from-top;
-	}
-
-	kbd::view-transition-new(*) {
-		animation: 300ms 200ms cubic-bezier(0.4, 0, 0.2, 1) both drop-to-bottom;
-	}
-
-	@keyframes drop-from-top {
-		from {
-			transform: translateY(-50vh);
-		}
-	}
-
-	@keyframes drop-to-bottom {
-		to {
-			transform: translateY(50vh);
-		}
-	}
-
-
-
 	/*GALERIA*/
 
 	#galeria {
@@ -866,7 +785,7 @@
 
 	#knt4k {
 		background-color: black;
-		height: 280vh;
+		height: 170vh;
 		width: 100%;
 		position: relative;
 	}
@@ -1317,50 +1236,12 @@
 
 	.logo {
 		width: 700px;
-		height: 400px;
+		height: 500px;
 		margin-top: 15px;
 		animation: spiner 2s both linear;
 		animation-delay: spiner 5s linear;
 	}
 
-	kbd {
-		width: 100%;
-		align-items: center;
-		align-content: center;
-		background-color: black;
-		border-radius: 3px;
-		border: 1px solid blue;
-		box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2),
-			0 2px 0 0 rgba(0, 0, 0, 0.7) inset;
-		color: gold;
-		font-size: 34px;
-		padding: 0.1em;
-	}
-
-	::view-transition-old(root),
-	::view-transition-new(root) {
-		animation: none;
-	}
-
-	::view-transition-old(*) {
-		animation: 300ms cubic-bezier(0.4, 0, 0.2, 1) both drop-from-top;
-	}
-
-	::view-transition-new(*) {
-		animation: 300ms 200ms cubic-bezier(0.4, 0, 0.2, 1) both drop-to-bottom;
-	}
-
-	@keyframes drop-from-top {
-		from {
-			transform: translateY(-50vh);
-		}
-	}
-
-	@keyframes drop-to-bottom {
-		to {
-			transform: translateY(50vh);
-		}
-	}
 
 	@keyframes spiner {
 		0% {
@@ -1511,7 +1392,7 @@
 
 	#knt4k {
 		background-color: black;
-		height: 260vh;
+		height: 190vh;
 		width: 100%;
 		position: relative;
 	}
